@@ -3,9 +3,10 @@
 ###### http://18.213.183.104/softoon.php
 
 # 1. 프로젝트 주제
-"길가면서, 밥먹으면서, 자기전, 수업시간에도 웹툰을 보는 시대!"
+<div>
+"길가면서, 밥먹으면서, 자기전, 수업시간에도 웹툰을 보는 시대!"<br/>
 오늘의 웹툰 중 **별점** 이 높은 6개의 웹툰과 **좋아요♥ & 싫어요♡** 를 가장 많이 받은 댓글을 소개해 해당 웹툰을 볼 수 있다.
-
+</div>
 # 2. 크롤링 사이트
 <div>
 <img src=https://user-images.githubusercontent.com/31759437/70472173-ffe7d980-1b11-11ea-8915-5ad5b1580c6d.png width=100 height=100>
@@ -46,11 +47,11 @@
     + unzip chromedriver_linux64.zip
   + PHP, Apache2 연동
     + /etc/apache2/apache2.conf
-      + <Directory /var/www/> ===> <Directory /ㅁ/ㅁ/> = softoon.php가 있는 경로
-      +   Options Indexes FollowSymLinks
-      +   AllowOverride None ===>  AllowOverride All
-      +   Require all granted
-      + </Directory>
+      <div><Directory /var/www/> ===> <Directory /ㅁ/ㅁ/> = softoon.php가 있는 경로<br/>
+      Options Indexes FollowSymLinks<br/><br/>
+      AllowOverride None ===>  AllowOverride All<br/>
+      Require all granted<br/>
+      </Directory></div>
     + /etc/apache2/sites-availalbe/000-default.conf
       + DocumentRoot /var/www/
         ===> ServerName 도메인주소 ServerAlias 도메인주소 DocumentRoot /ㅁ/ㅁ/ = softoon.php가 있는 경로
