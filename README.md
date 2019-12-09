@@ -5,7 +5,7 @@
 # 1. 프로젝트 주제
 <div>
 "길가면서, 밥먹으면서, 자기전, 수업시간에도 웹툰을 보는 시대!"<br/>
-오늘의 웹툰 중 **별점** 이 높은 6개의 웹툰과 **좋아요♥ & 싫어요♡** 를 가장 많이 받은 댓글을 소개해 해당 웹툰을 볼 수 있다.
+오늘의 웹툰 중 별점이 높은 6개의 웹툰과 좋아요♥ & 싫어요♡를 가장 많이 받은 댓글과 해당 웹툰을 소개한다.
 </div>
 # 2. 크롤링 사이트
 <div>
@@ -48,10 +48,11 @@
   + PHP, Apache2 연동
     + /etc/apache2/apache2.conf
       <div><Directory /var/www/> ===> <Directory /ㅁ/ㅁ/> = softoon.php가 있는 경로<br/>
-      Options Indexes FollowSymLinks<br/><br/>
+      Options Indexes FollowSymLinks<br/>
       AllowOverride None ===>  AllowOverride All<br/>
       Require all granted<br/>
-      </Directory></div>
+      </Directory><br/>
+      ===> <Directory /ㅁ/ㅁ/> = softoon.php가 있는 경로<br/></div>
     + /etc/apache2/sites-availalbe/000-default.conf
       + DocumentRoot /var/www/
         ===> ServerName 도메인주소 ServerAlias 도메인주소 DocumentRoot /ㅁ/ㅁ/ = softoon.php가 있는 경로
