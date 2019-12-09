@@ -47,12 +47,8 @@
     + unzip chromedriver_linux64.zip
   + PHP, Apache2 연동
     + /etc/apache2/apache2.conf
-      <div><Directory /var/www/> ===> <Directory /ㅁ/ㅁ/> = softoon.php가 있는 경로<br/>
-      Options Indexes FollowSymLinks<br/>
-      AllowOverride None ===>  AllowOverride All<br/>
-      Require all granted<br/>
-      </Directory><br/>
-      ===> <Directory /ㅁ/ㅁ/> = softoon.php가 있는 경로<br/></div>
+      + Directory /var/www/>
+        ===> <Directory /ㅁ/ㅁ/> = softoon.php가 있는 경로
     + /etc/apache2/sites-availalbe/000-default.conf
       + DocumentRoot /var/www/
         ===> ServerName 도메인주소 ServerAlias 도메인주소 DocumentRoot /ㅁ/ㅁ/ = softoon.php가 있는 경로
