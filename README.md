@@ -52,9 +52,8 @@
       +   Require all granted
       + </Directory>
     + /etc/apache2/sites-availalbe/000-default.conf
-      + DocumentRoot /var/www/ ===> ServerName 도메인주소 < br / >
-                                    ServerAlias 도메인주소 < br / >
-                                    DocumentRoot /ㅁ/ㅁ/ = softoon.php가 있는 경로
+      + DocumentRoot /var/www/
+        ===> ServerName 도메인주소 ServerAlias 도메인주소 DocumentRoot /ㅁ/ㅁ/ = softoon.php가 있는 경로
     + service apache2 restart
     
 + Python에서의 설정
